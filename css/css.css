@@ -1,0 +1,138 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Anonymous Pro;
+    color: #fff;
+    background: #1d1d20
+}
+
+#nav {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    padding: 20px;
+}
+
+#nav a {
+    text-decoration: none;
+}
+
+.hover:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 5px #6D6D70, 0 0 25px #6D6D70, 0 0 50px #6D6D70;
+}
+
+.texto:hover{
+    text-shadow: 0 0 2px #ffffff;
+}
+
+#container {
+    position: relative;
+    top: 80px
+
+}
+
+#apresentacao {
+    position: relative;
+    left: 220px;
+    width: 850px;
+}
+
+.bemVindo {
+    font-size: 32px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.titulo::after {
+    content: '|';
+    margin-left: 3px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+}
+
+@keyframes pisca {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+#apresentacao p{
+    position: relative;
+    top: -15px;
+    font-size: 13.5px;
+}
+
+#projetos {
+    position: relative;
+    top: 45px;
+    left: 170px;
+
+    width: 1000px;
+}
+
+#projetos a {
+    color: #fff;
+}
+
+#projetos h1 {
+    font-size: 30px;
+}
+
+#projetos h2 {
+    font-size: 23px;
+}
+
+.linha {
+    position: fixed;
+    top: 240px;
+}
+
+.linhe {
+    width: 180px;
+    height: 5px;
+    background: linear-gradient(to right, #487B6C, #8b008b, #8b008b, #487B6C);
+}
+
+
+#portifolio {
+    position: absolute;
+    top: 45px;
+    left: 15px;
+}
+
+#gerenciaVendas {
+    position: absolute;
+    top: 135px;
+    left: 15px;
+
+}
+
+.descricao {
+    position: relative;
+    top: 5px;
+    width: 850px;
+    height: 40px;
+    font-size: 13.5px;
+}
+
+.cantoDireito {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.cantoEsquerdo {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
