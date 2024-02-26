@@ -53,6 +53,10 @@ body {
     padding-left: 10px;
 }
 
+.cardApresentacao {
+    display: flex;
+}
+
 #botao {
     position: fixed;
     left: 0;
@@ -80,7 +84,6 @@ button:hover {
 
 button.active {
     border: 1px solid #b1b1b1 !important;
-    /*background-color: !important;*/
 }
 
 .linhaApresentacao {
@@ -177,11 +180,11 @@ button.active {
         bottom: 0;
         transition: 0.5s ease-in-out;
     }
-    
+
     .projeto1:hover::after {
         width: 155px;
     }
-    
+
     .projeto2:hover::after {
         width: 268px;
     }
@@ -201,4 +204,256 @@ button.active {
     position: fixed;
     top: 0;
     left: 0;
+}
+
+/*RESPONSIVIDADE*/
+@media screen and (max-width: 1100px) {
+    #main {
+        flex-direction: column;
+    }
+
+    .logo img {
+        width: 55px;
+        height: 55px;
+    }
+
+    #nav img {
+        width: 35px;
+        height: 35px;
+    }
+
+    #git {
+        border-radius: 50px !important;
+    }
+
+    .cardApresentacao {
+        position: relative;
+        top: -50px;
+    }
+
+    #apresentacao {
+        width: 750px;
+        height: 160px;
+        padding-left: 10px;
+    }
+
+    #apresentacao p {
+        font-size: 17px;
+    }
+
+    #projetos {
+        position: relative;
+        top: -10px;
+        left: 70px;
+    }
+
+    .projeto {
+        width: 760px;
+        height: 200;
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+    #projetos h2 {
+        margin-top: 9px;
+        font-size: 24px;
+    }
+
+    #projetos p {
+        font-size: 17px;
+    }
+
+    button {
+        width: 90px;
+        height: 35px;
+        font-size: 17px;
+    }
+
+    button.active {
+        border: 2px solid #b1b1b1 !important;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #main {
+        flex-direction: column;
+    }
+
+    .logo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    #nav img {
+        width: 35px;
+        height: 35px;
+    }
+
+    #git {
+        border-radius: 20px !important;
+    }
+
+    .cardApresentacao {
+        position: relative;
+        top: -100px;
+        left: 40px;
+    }
+
+    #apresentacao {
+        width: 600px;
+        height: 160px;
+        padding-left: 10px;
+    }
+
+    #apresentacao p {
+        font-size: 17px;
+    }
+
+    #projetos {
+        position: relative;
+        top: -10px;
+        left: 70px;
+    }
+
+    .projeto {
+        width: 760px;
+        height: 200;
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+    #projetos h2 {
+        margin-top: 9px;
+        font-size: 24px;
+    }
+
+    #projetos p {
+        font-size: 17px;
+    }
+
+    button {
+        width: 90px;
+        height: 35px;
+        font-size: 17px;
+    }
+
+    button.active {
+        border: 2px solid #b1b1b1 !important;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .logo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    #nav img {
+        width: 35px;
+        height: 35px;
+    }
+
+    #git {
+        border-radius: 20px !important;
+    }
+
+    .cardApresentacao {
+        position: relative;
+        top: -100px;
+        left: 40px;
+    }
+
+    #apresentacao {
+        width: 600px;
+        height: 160px;
+        padding-left: 10px;
+    }
+
+    #projetos {
+        left: 50px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    svg {
+        width: 0px;
+        height: 0px;
+    }
+
+    .logo img {
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        top: 10px;
+        left: 10px;
+    }
+
+    #nav {
+        top: 0;
+        padding: 10px;
+    }
+
+    #nav img {
+        width: 40px;
+        height: 40px;
+        margin-left: 4px;
+    }
+
+    .cardApresentacao {
+        width: 385px;
+        height: 210px;
+
+        position: absolute;
+        left: 0;
+        top: -160px;
+    }
+
+    #apresentacao {
+        width: 385;
+        height: 210px;
+    }
+
+    .linhaApresentacao {
+        height: 210px;
+        width: 3px;
+        background: linear-gradient(0deg, #487B6C, #8b008b, #487B6C);
+        border-radius: 10px;
+    }
+
+    #titulo {
+        font-size: 45px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    #apresentacao p {
+        margin-top: 15px;
+        font-size: 14px;
+    }
+
+    #projetos {
+        width: 385px;
+        height: 400;
+        top: 100px;
+        left: 0;
+    }
+
+    .projeto {
+        width: 376px;
+        height: 200;
+    }
+
+    #projetos h2 {
+        font-size: 23px;
+    }
+    
+    #projetos p {
+        font-size: 14px;
+    }
+
+    #botao {
+        bottom: 10px;
+        margin: 10px;
+    }
+    
+    
 }
