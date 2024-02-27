@@ -10,102 +10,104 @@
 </head>
 
 <body>
-    <svg width="300" height="300" class="cantoEsquerdo" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-            <linearGradient id="gradiente1" x1="100%" y1="100%" x2="0%" y2="0%">
-                <stop offset="0%" style="stop-color: #00ff4c; stop-opacity: 1" />
-                <stop offset="100%" style="stop-color: #8b008b; stop-opacity: 1" />
-            </linearGradient>
-        </defs>
-        <path fill="url(#gradiente1)" d="M8 0h292l-20 20H25a5 5 0 0 0-5 5v255L0 300V8a8 8 0 0 1 8-8Z"></path>
-    </svg>
+    <div>
+        <svg width="300" height="300" class="cantoEsquerdo" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="gradiente1" x1="100%" y1="100%" x2="0%" y2="0%">
+                    <stop offset="0%" style="stop-color: #00ff4c; stop-opacity: 1" />
+                    <stop offset="100%" style="stop-color: #8b008b; stop-opacity: 1" />
+                </linearGradient>
+            </defs>
+            <path fill="url(#gradiente1)" d="M8 0h292l-20 20H25a5 5 0 0 0-5 5v255L0 300V8a8 8 0 0 1 8-8Z"></path>
+        </svg>
 
-    <svg width="300" height="300" class="cantoDireito" xmlns="http://www.w3.org/2000/svg" style="pointer-events:none">
-        <defs>
-            <linearGradient id="gradiente2" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" style="stop-color: #00ff4c; stop-opacity: 1" />
-                <stop offset="100%" style="stop-color: #8b008b; stop-opacity: 1" />
-            </linearGradient>
-        </defs>
-        <path fill="url(#gradiente2)" d="M292 300H0l20-20h255a5 5 0 0 0 5-5V20l20-20v292a8 8 0 0 1-8 8Z"></path>
-    </svg>
+        <svg width="300" height="300" class="cantoDireito" xmlns="http://www.w3.org/2000/svg"
+            style="pointer-events:none">
+            <defs>
+                <linearGradient id="gradiente2" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color: #00ff4c; stop-opacity: 1" />
+                    <stop offset="100%" style="stop-color: #8b008b; stop-opacity: 1" />
+                </linearGradient>
+            </defs>
+            <path fill="url(#gradiente2)" d="M292 300H0l20-20h255a5 5 0 0 0 5-5V20l20-20v292a8 8 0 0 1-8 8Z"></path>
+        </svg>
 
-    <div id="nav">
-        <a aria-label="github" target="_blank" rel="noopener noreferrer" href="https://github.com/GabrielGonzatto">
-            <img style="border-radius: 20px;" class="hover" id="git" src="imagens/github.png" alt="github" height="35px"
-                width="35px" style="margin-right: 10px;"> </a>
-        <a aria-label="linkedin" target="_blank" rel="noopener noreferrer"
-            href="https://www.linkedin.com/in/gabrielgonzatto/"> <img style="border-radius: 4px;" class="hover"
-                src="imagens/linkedin.png" alt="linkedin" height="35px" width="35px" style="margin-right: 10px;">
-        </a>
-        <a aria-label="email" href="mailto:gabegonzatto@gmail.com?subject=Email sobre o portifolio"> <img
-                style="border-radius: 5px;" class="hover" src="imagens/gmail.png" alt="gmail" height="35px" width="38px"
-                style="margin-right: 10px;"> </a>
-    </div>
+        <div id="nav">
+            <a aria-label="github" target="_blank" rel="noopener noreferrer" href="https://github.com/GabrielGonzatto">
+                <img class="github" id="navImagens" src="imagens/github.png" alt="github">
+            </a>
 
-    <div id="botao">
-        <button id="btnPT" class="active">pt-br</button>
-        <button id="btnEN">en-us</button>
-    </div>
+            <a aria-label="linkedin" target="_blank" rel="noopener noreferrer"
+                href="www.linkedin.com/in/gabrielgonzatto/">
+                <img class="linkedin" id="navImagens" src="imagens/linkedin.png" alt="linkedin">
+            </a>
 
-    <div class="logo">
-        <a href="#"><img width="40px" height="40px" src="imagens/logo.png" alt="logo"></a>
-    </div>
+            <a aria-label="email" href="mailto:gabegonzatto@gmail.com?subject=Email sobre o portifolio">
+                <img class="email" id="navImagens" src="imagens/gmail.png" alt="gmail">
+            </a>
+        </div>
 
-    <div id="main">
+        <div id="logo">
+            <a href="#"><img src="imagens/logo.png" alt="logo"></a>
+        </div>
 
-        <div class="cardApresentacao">
-            <div class="linhaApresentacao"></div>
-
+        <div id="main">
             <div id="apresentacao">
-                <h1 id="titulo">Bem-Vindo!</h1>
-                <p id="descricao">Me chamo Gabriel, sou um desenvolvedor web com experiência em projetos
-                    front-end/back-end.
-                    Minha
-                    especialidade
-                    inclui
-                    HTML,
-                    CSS, Angular, Bootstrap.</p>
-                <p id="descricao2">Além disso, tenho domíno de Java, Spring Boot, Python, Git, Docker, Postman e
-                    PostgreSQL
-                    para o
-                    desenvolvimento de back-end.</p>
+                <div class="linhaApresentacao"></div>
+
+                <div id="textoApresentacao">
+                    <h1 id="titulo">Bem-Vindo!</h1>
+                    <p id="descricao">Me chamo Gabriel, sou um desenvolvedor web com experiência em projetos
+                        front-end/back-end.
+                        Minha
+                        especialidade
+                        inclui
+                        HTML,
+                        CSS, Angular, Bootstrap.</p>
+                    <p id="descricao2">Além disso, tenho domíno de Java, Spring Boot, Python, Git, Docker, Postman e
+                        PostgreSQL
+                        para o
+                        desenvolvimento de back-end.</p>
+                </div>
+            </div>
+
+            <div id="projetos">
+                <h1 id="titulo2">Projetos</h1>
+
+                <div class="linha"></div>
+
+                <div class="projeto">
+                    <a href="https://github.com/GabrielGonzatto/portifolio" target="_blank" rel="noopener noreferrer">
+                        <h2 class="projeto1">Portfólio</h2>
+                    </a>
+                    <p id="descP1">
+                        Este site foi criado com o intuito didático e para me apresentar. Nele, compartilho meus
+                        trabalhos,
+                        habilidades e um pouco sobre mim.</p>
+                    <p id="tec1">Tecnologias: HTML, CSS, JS.</p>
+
+                </div>
+
+                <div class="projeto">
+                    <a href="https://github.com/GabrielGonzatto/Site_Gerencia_Vendas" target="_blank"
+                        rel="noopener noreferrer">
+                        <h2 class="projeto2">Gerência de vendas</h2>
+                    </a>
+                    <p id="descP2">
+                        Sistema criado com a intenção de facilitar o gerenciamento de vendas para pequenos
+                        empreendedores.</p>
+                    <p id="tec2">Tecnologias: HTML, CSS, JS, Java, SpringBoot, Postman, PostgreSQL.</p>
+                </div>
+
             </div>
         </div>
 
-        <div id="projetos">
-            <h1 id="titulo2">Projetos</h1>
-
-            <div class="linha"></div>
-
-            <div class="projeto">
-                <a href="https://github.com/GabrielGonzatto/portifolio" target="_blank" rel="noopener noreferrer">
-                    <h2 class="projeto1">Portifolio</h2>
-                </a>
-                <p id="descP1">
-                    Este site foi criado com o intuito didático e para me apresentar. Nele, compartilho meus trabalhos,
-                    habilidades e um pouco sobre mim.</p>
-                <p id="tec1">Tecnologias: HTML, CSS, JS.</p>
-
-            </div>
-
-            <div class="projeto">
-                <a href="https://github.com/GabrielGonzatto/Site_Gerencia_Vendas" target="_blank"
-                    rel="noopener noreferrer">
-                    <h2 class="projeto2">Gerência de vendas</h2>
-                </a>
-                <p id="descP2">
-                    Sistema criado com a intenção de facilitar o gerenciamento de vendas para pequenos
-                    empreendedores.</p>
-                <p id="tec2">Tecnologias: HTML, CSS, JS, Java, SpringBoot, Postman, PostgreSQL.</p>
-            </div>
-
+        <div id="botao">
+            <button id="btnPT" class="active">pt-br</button>
+            <button id="btnEN">en-us</button>
         </div>
 
-    </div>
-
-    <script src="js/js.js"></script>
-
+        <script src="js/js.js"></script>
 </body>
 
 </html>
