@@ -1,113 +1,124 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/css.css">
-    <link rel="shortcut icon" type="imagem/png" href="imagens/logo.ico">
-    <title>Gabriel Gonzatto</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/css.css">
+        <link rel="shortcut icon" type="imagem/png" href="imagens/logo.ico">
+        <title>Gabriel Gonzatto</title>
+    </head>
 
-<body>
-    <div>
-        <svg width="300" height="300" class="cantoEsquerdo" xmlns="http://www.w3.org/2000/svg">
+    <body>
+
+        <svg width="300" height="300" class="cantoEsquerdo"
+            xmlns="http://www.w3.org/2000/svg">
             <defs>
-                <linearGradient id="gradiente1" x1="100%" y1="100%" x2="0%" y2="0%">
-                    <stop offset="0%" style="stop-color: #00ff4c; stop-opacity: 1" />
-                    <stop offset="100%" style="stop-color: #8b008b; stop-opacity: 1" />
-                </linearGradient>
+                <lineargradient id="gradiente1" x1="100%" y1="100%" x2="0%"
+                    y2="0%">
+                    <stop offset="0%"
+                        style="stop-color: #00ff4c; stop-opacity: 1" />
+                    <stop offset="100%"
+                        style="stop-color: #8b008b; stop-opacity: 1" />
+                </lineargradient>
             </defs>
-            <path fill="url(#gradiente1)" d="M8 0h292l-20 20H25a5 5 0 0 0-5 5v255L0 300V8a8 8 0 0 1 8-8Z"></path>
+            <path fill="url(#gradiente1)"
+                d="M8 0h292l-20 20H25a5 5 0 0 0-5 5v255L0 300V8a8 8 0 0 1 8-8Z"></path>
         </svg>
 
-        <svg width="300" height="300" class="cantoDireito" xmlns="http://www.w3.org/2000/svg"
+        <svg width="300" height="300" class="cantoDireito"
+            xmlns="http://www.w3.org/2000/svg"
             style="pointer-events:none">
             <defs>
-                <linearGradient id="gradiente2" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" style="stop-color: #00ff4c; stop-opacity: 1" />
-                    <stop offset="100%" style="stop-color: #8b008b; stop-opacity: 1" />
-                </linearGradient>
+                <lineargradient id="gradiente2" x1="0%" y1="0%" x2="100%"
+                    y2="100%">
+                    <stop offset="0%"
+                        style="stop-color: #00ff4c; stop-opacity: 1" />
+                    <stop offset="100%"
+                        style="stop-color: #8b008b; stop-opacity: 1" />
+                </lineargradient>
             </defs>
-            <path fill="url(#gradiente2)" d="M292 300H0l20-20h255a5 5 0 0 0 5-5V20l20-20v292a8 8 0 0 1-8 8Z"></path>
+            <path fill="url(#gradiente2)"
+                d="M292 300H0l20-20h255a5 5 0 0 0 5-5V20l20-20v292a8 8 0 0 1-8 8Z"></path>
         </svg>
 
-        <div id="nav">
-            <a aria-label="github" target="_blank" rel="noopener noreferrer" href="https://github.com/GabrielGonzatto">
-                <img class="github" id="navImagens" src="imagens/github.png" alt="github">
+        <div class="links">
+            <a aria-label="github" target="_blank" rel="noopener noreferrer"
+                href="https://github.com/GabrielGonzatto">
+                <img class="github" id="navImagens" src="imagens/github.png"
+                    alt="github">
             </a>
 
             <a aria-label="linkedin" target="_blank" rel="noopener noreferrer"
-                href="www.linkedin.com/in/gabrielgonzatto/">
-                <img class="linkedin" id="navImagens" src="imagens/linkedin.png" alt="linkedin">
+                href="https://www.linkedin.com/in/gabrielgonzatto/">
+                <img class="linkedin" id="navImagens" src="imagens/linkedin.png"
+                    alt="linkedin">
             </a>
 
-            <a aria-label="email" href="mailto:gabegonzatto@gmail.com?subject=Email sobre o portifolio">
-                <img class="email" id="navImagens" src="imagens/gmail.png" alt="gmail">
+            <a aria-label="email" href="mailto:gabegonzatto@gmail.com">
+                <img class="email" id="navImagens" src="imagens/gmail.png"
+                    alt="gmail">
             </a>
         </div>
 
         <div id="logo">
-            <a href="#"><img src="imagens/logo.png" alt="logo"></a>
+            <a href="index.html"><img src="imagens/logo.png" alt="logo"></a>
         </div>
 
-        <div id="main">
-            <div id="apresentacao">
-                <div class="linhaApresentacao"></div>
-
-                <div id="textoApresentacao">
-                    <h1 id="titulo">Bem-Vindo!</h1>
-                    <p id="descricao">Me chamo Gabriel, sou um desenvolvedor web com experiência em projetos
-                        front-end/back-end.
-                        Minha
-                        especialidade
-                        inclui
-                        HTML,
-                        CSS, Angular, Bootstrap.</p>
-                    <p id="descricao2">Além disso, tenho domíno de Java, Spring Boot, Python, Git, Docker, Postman e
-                        PostgreSQL
-                        para o
-                        desenvolvimento de back-end.</p>
-                </div>
-            </div>
-
-            <div id="projetos">
-                <h1 id="titulo2">Projetos</h1>
-
-                <div class="linha"></div>
-
-                <div class="projeto">
-                    <a href="https://github.com/GabrielGonzatto/portifolio" target="_blank" rel="noopener noreferrer">
-                        <h2 class="projeto1">Portfólio</h2>
-                    </a>
-                    <p id="descP1">
-                        Este site foi criado com o intuito didático e para me apresentar. Nele, compartilho meus
-                        trabalhos,
-                        habilidades e um pouco sobre mim.</p>
-                    <p id="tec1">Tecnologias: HTML, CSS, JS.</p>
-
-                </div>
-
-                <div class="projeto">
-                    <a href="https://github.com/GabrielGonzatto/Site_Gerencia_Vendas" target="_blank"
-                        rel="noopener noreferrer">
-                        <h2 class="projeto2">Gerência de vendas</h2>
-                    </a>
-                    <p id="descP2">
-                        Sistema criado com a intenção de facilitar o gerenciamento de vendas para pequenos
-                        empreendedores.</p>
-                    <p id="tec2">Tecnologias: HTML, CSS, JS, Java, SpringBoot, Postman, PostgreSQL.</p>
+        <div class="main">
+            <div class="apresentacao">
+                <div class="linha_apresentacao"></div>
+                <div class="texto_apresentacao">
+                    <h1 class="titulo_apresentacao" style="font-size: 55px;">Bem-Vindo!</h1>
+                    <p>Me chamo Gabriel, sou desenvolvedor back-end
+                        especializado em Java Spring Boot, com amplo
+                        conhecimento em Docker, Git, Angular, TypeScript e
+                        Python. Sou apaixonado por tecnologia e procuro sempre
+                        aprender novas ferramentas e técnicas.</p>
                 </div>
 
             </div>
-        </div>
 
-        <div id="botao">
-            <button id="btnPT" class="active">pt-br</button>
-            <button id="btnEN">en-us</button>
-        </div>
+            <div class="projetos">
+                <h1>Projetos</h1>
+                <div style="display: flex;">
+                    <div class="linha_apresentacao"></div>
 
-        <script src="js/js.js"></script>
-</body>
+                    <div class="projeto_1">
+                        <h2 style="margin-left: 8px;">Economiza Já</h2>
+                        <p style="margin-left: 14px;">Economiza Já é um sistema completo para o
+                            gerenciamento
+                            de finanças pessoais, desenvolvido com foco na
+                            organização e controle financeiro de forma simples e
+                            intuitiva.</p>
+
+                        <div class="repositorios_projeto_1">
+                            <h3 style="margin-left: 20px;"><a target="_blank"
+                                    href="https://github.com/GabrielGonzatto/back_end_economizaja">Back-End</a></h3>
+                            <p style="margin-left: 26px;">Construído utilizando Java Spring Boot e o banco
+                                de
+                                dados PostgreSQL, garantindo segurança e
+                                eficiência
+                                no
+                                armazenamento de dados.</p>
+                            <h3 style="margin-left: 20px;"><a target="_blank"
+                                    href="https://github.com/GabrielGonzatto/front_end_economizaja">Front-End
+                                    Web</a></h3>
+                            <p style="margin-left: 26px;">Desenvolvido com Angular e TypeScript, oferece
+                                uma
+                                interface amigável e dinâmica, permitindo que os
+                                usuários acompanhem suas finanças diretamente do
+                                navegador.</p>
+                            <h3 style="margin-left: 20px;"><a target="_blank"
+                                    href="https://github.com/GabrielGonzatto/mobile_front_end_economizaja-">Front-End
+                                    Mobile</a></h3>
+                            <p style="margin-left: 26px;">Implementado em Flutter com Dart, oferecendo uma
+                                experiência consistente e responsiva em
+                                smartphones.</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
 
 </html>
