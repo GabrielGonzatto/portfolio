@@ -1,174 +1,348 @@
-@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+html,
+body {
+  width: 100vw;
+  height: 100vh;
 
-* {
-    margin: 0;
-    padding: 0;
+  scroll-behavior: smooth;
+
+  background-image: url("../imagens/fundo.jpg") !important;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
-
-html, body {
-    width: 100vw; 
-    height: 100vh; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
-  }
 
 body {
-    user-select: none;
-    font-family: Anonymous Pro;
-    color: #d1d1d1;
-    background: #1d1d20;
+  user-select: none;
+  color: #d1d1d1;
+
+  padding-top: 80px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-.main {
-    width: 90%;
-    height: 85%;
-    display: flex;
-    align-items: center;
+/*********************** NAV BAR ***********************/
+
+.navbar {
+  width: 80%;
+  margin: 0 auto;
+  justify-content: center;
+  border-radius: 10px;
+  background: rgb(2,2,2) !important;
+  background: radial-gradient(circle, rgba(2,2,2,1) 0%, rgba(29,27,27,1) 100%) !important;
 }
 
-
-/************* CANTOS *************/
-.cantoDireito {
-    position: absolute;
-    bottom: 0;
-    right: 0;
+.container-fluid {
+  flex-wrap: nowrap !important;
 }
 
-.cantoEsquerdo {
-    position: absolute;
-    top: 0;
-    left: 0;
+.navbar-nav {
+  width: 100%;
+  justify-content: center;
+  flex-direction: row;
 }
 
-
-/************* IMAGENS NAV *************/
-.links {
-    width: 100%;
-    display: flex;
-    justify-content: end;
-
-    position: absolute;
-    top: 10px;
-    right: 10px;
+.navbar-nav .nav-link {
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
-.links a {
-    text-decoration: none;
+.navbar-nav .nav-link:hover {
+  transform: scale(1.1);
+  transition: 0.5s ease-in-out;
+  color: #d1d1d1;
 }
 
-#navImagens:hover {
-    transform: scale(1.1);
-    transition: 0.3s ease-in-out;
-    box-shadow: 0 0 5px #6D6D70, 0 0 8px #6D6D70, 0 0 16px #6D6D70;
+.navbar a {
+  color: #d1d1d1;
 }
 
-#navImagens {
-    margin-top: 10px;
-    margin-right: 10px;
+.navbar img {
+  width: 40px;
+}
+
+.navbar img:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
+}
+
+/*********************** SOBRE MIM ***********************/
+
+.sobre-mim {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  /*background-color: #161515;*/
+  background: rgb(2,2,2);
+  background: radial-gradient(circle, rgba(2,2,2,1) 0%, rgba(29,27,27,1) 100%);
+  border-radius: 10px;
+}
+
+.sobre-mim-apresentacao {
+  display: flex;
+  justify-content: center;
+}
+
+.sobre-mim-foto {
+  width: 20%;
+  min-width: 200px;
+  max-width: 200px;
+}
+
+.sobre-mim-foto img {
+  width: 100%;
+  border-radius: 20px;
+  margin: 10px;
+  animation: borda-colorida 3s infinite;
+}
+
+@keyframes borda-colorida {
+  0% {
+    box-shadow: 0 0 2px 1px red;
+  }
+  33% {
+    box-shadow: 0 0 2px 1px blue;
+  }
+  66% {
+    box-shadow: 0 0 2px 1px green;
+  }
+  100% {
+    box-shadow: 0 0 2px 1px red;
+  }
+}
+
+.sobre-mim-texto {
+  width: 80%;
+  padding: 10px;
+  padding-left: 20px;
+  border-radius: 20px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.sobre-mim-texto h1 {
+  font-size: 32px;
+}
+
+.sobre-mim-links a {
+  text-decoration: none;
+}
+
+.sobre-mim-links img {
+  margin-right: 10px;
+  height: 40px;
+}
+
+.sobre-mim-links img:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 0 5px #6d6d70, 0 0 8px #6d6d70, 0 0 16px #6d6d70;
 }
 
 .github {
-    height: 35px;
-    width: 35px;
-    border-radius: 20px;
+  border-radius: 30px;
 }
 
 .linkedin {
-    height: 35px;
-    width: 35px;
-    border-radius: 3px;
+  border-radius: 3px;
 }
 
 .email {
-    height: 35px;
-    width: 38px;
-    border-radius: 5px;
+  border-radius: 10px;
 }
 
-/*-------------------------- LOGO --------------------------*/
-#logo {
-    position: fixed;
-    left: 45px;
-    top: 45px;
+/*********************** STACKS ***********************/
+
+.sobre-mim-stacks {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-#logo img {
-    width: 50px;
-    height: 50px;
+.sobre-mim-stacks h1 {
+  font-size: 29px;
 }
 
-#logo img:hover {
-    transform: scale(1.2);
-    transition: 0.3s ease-in-out;
+.sobre-mim-stacks-imagem {
+  display: inline;
 }
 
-/*-------------------------- APRESENTAÇÃO --------------------------*/
-.apresentacao {
-    width: 50%;
-    margin: 5px;
-    display: flex;
+.sobre-mim-stacks-imagem img {
+  width: 45px;
+  margin: 15px;
 }
 
-.linha_apresentacao {
-    width: 10px;
-    background: linear-gradient(0deg, #487B6C, #8b008b, #487B6C);
-    border-radius: 10px;
+.sobre-mim-stacks-imagem img:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
 }
 
-.texto_apresentacao {
-    padding-bottom: 12px;
-    margin-left: 5px;
-}
+/*********************** PROJETOS ***********************/
 
-/*-------------------------- PROJETOS --------------------------*/
 .projetos {
-    width: 50%;
-    margin: 5px;
+  margin-top: 30px;
+  padding: 10px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  /*background-color: #161515;*/
+  background: rgb(2,2,2);
+  background: radial-gradient(circle, rgba(2,2,2,1) 0%, rgba(29,27,27,1) 100%);
+  border-radius: 10px;
 }
 
-.repositorios_projeto_1 h3 {
-    margin-top: 4px;
+.projetos h1 {
+  font-size: 32px;
 }
 
-.repositorios_projeto_1 a {
-    text-decoration: none;
-    color: #d1d1d1;
-    font-size: 19px;
+.projetos h2 {
+  font-size: 26px;
 }
 
-.repositorios_projeto_1 a:hover {
-    letter-spacing: 1.5px;
-    text-decoration: underline;
-    transition: 0.5s ease-in-out;
+.projetos h3 {
+  font-size: 23px;
+  margin-bottom: 0px;
 }
 
-.repositorios_projeto_1 p {
-    font-size: 15px;
+.projetos a {
+  font-size: 17px;
 }
 
-/************* RESPONSIVIDADE *************/
+.projetos-economizaja {
+  margin: 10px;
+}
 
-@media screen and (max-width: 1200px) {
-    .main {
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-    }
+.projetos-cointrack {
+  margin: 10px;
+}
+
+.projetos-repositorios {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+
+.projetos-repositorios-link {
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.projetos-repositorios-link img {
+  width: 40px;
+  margin: 10px;
+}
+
+.projetos-repositorios-link img:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
+}
+
+.projetos-repositorios-link-imagens {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projetos-repositorios-link-github {
+  display: flex;
+  align-items: center;
+}
+
+.projetos-repositorios-link-github img {
+  width: 30px;
+}
+
+.projetos-repositorios-link-github img:hover {
+  transform: scale(1.2);
+  transition: 0.5s ease-in-out;
+}
+
+/*********************** RESPONSIVIDADE ***********************/
+
+@media screen and (max-width: 800px) {
+  .projetos-repositorios {
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 700px) {
-    .titulo_apresentacao {
-        font-size: 45px !important;
-    }
+  .sobre-mim-apresentacao {
+    justify-content: start;
+  }
 
-    .linha_apresentacao {
-        width: 20px;
-    }
+  .sobre-mim-foto {
+    display: none;
+  }
 }
 
-@media screen and (max-width: 600px) {
-    .titulo_apresentacao {
-        font-size: 35px !important;
-    }
+@media screen and (max-width: 700px) {
+  .projetos-repositorios-link {
+    margin-right: 0px;
+  }
 }
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 28px !important;
+  }
+
+  h2 {
+    font-size: 22px !important;
+  }
+
+  h3 {
+    font-size: 22px !important;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  .sobre-mim-stacks {
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 10px;
+  }
+
+  .sobre-mim-stacks img {
+    width: 35px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 28px !important;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .sobre-mim-stacks img {
+    width: 35px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  h1 {
+    font-size: 25px !important;
+  }
+
+  p {
+    font-size: 13px;
+  }
+
+  .sobre-mim-stacks img {
+    width: 35px;
+  }
+}
+
