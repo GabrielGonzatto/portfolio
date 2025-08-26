@@ -17,8 +17,7 @@ a {
 
 /* ====== LAYOUT PRINCIPAL ====== */
 body {
-  background-color: #11071f;
-  display: flex;
+background: linear-gradient(270deg, #11071f, #1a0b2e, #11071f);  display: flex;
   flex-direction: column;
   align-items: center;
 }

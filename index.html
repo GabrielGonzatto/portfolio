@@ -3,45 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="css/css.css" />
+      <link rel="icon" href="imagens/logo.png" type="image/png">
     <title>Gabriel Gonzatto</title>
   </head>
 
   <body>
-    <nav class="navbar bg-dark fixed-top">
-      <div class="container-fluid">
-        <div class="navbar-nav">
-          <a class="nav-link" href="#sobre-mim">Sobre mim</a>
-          <a class="nav-link" href="#projetos">Projetos</a>
-        </div>
+    <!-- ################## NAVBAR ################## -->
+    <div class="navbar">
+      <div class="logo">
+        <img src="imagens/logo.png" alt="Logo" />
       </div>
-    </nav>
+      <div class="sumario">
+        <a href="#sobre-mim">Sobre mim</a>
+        <a href="#experiencia">Experiência</a>
+        <a href="#projetos">Projetos</a>
+      </div>
+    </div>
 
+    <!-- ################## SOBRE MIM ################## -->
     <div id="sobre-mim" class="sobre-mim">
-      <div class="sobre-mim-apresentacao">
+      <div class="sobre-mim-container">
         <div class="sobre-mim-foto">
-          <img src="imagens/foto.JPG" alt="" />
+          <img src="imagens/foto.JPG" alt="Foto" />
         </div>
-
-        <div class="sobre-mim-texto">
-          <div>
-            <h1>Sobre mim</h1>
+        <div class="sobre-mim-conteudo">
+          <div class="sobre-mim-texto">
+            <h2>Sobre mim</h2>
             <p>
-              Me chamo Gabriel, sou desenvolvedor backend com três anos de experiência em Java e
-              Spring Boot, especializado na criação de APIs REST eficientes e
-              escaláveis. Estou sempre em busca de novos desafios que ampliem
-              meu conhecimento e me permitam contribuir ativamente para o
-              sucesso de projetos inovadores.
+              Desenvolvedor backend com três anos de experiência em Java e
+              Spring Boot, especializado na criação de APIs REST escaláveis.
+              Atuo com boas práticas de código, arquiteturas modernas e
+              metodologia ágil Scrum. Busco constantemente novos desafios para
+              aprimorar meu conhecimento e contribuir para projetos inovadores.
             </p>
           </div>
-          <div class="sobre-mim-contatos">
-            <h1>Contate-me</h1>
 
-            <div class="sobre-mim-links">
+          <div class="sobre-mim-contatos">
+            <h2>Contate-me</h2>
+            <div class="sobre-mim-contatos-fotos">
               <a
                 aria-label="GitHub"
                 target="_blank"
@@ -83,89 +83,147 @@
         </div>
       </div>
 
-      <div class="sobre-mim-stacks">
-        <h1>Minhas tecnologias</h1>
-        <div class="sobre-mim-stacks-imagem">
+      <div class="tecnologias-container">
+        <h2>Minhas Tecnologias</h2>
+        <div class="tecnologias-container-fotos">
           <a
             target="_blank"
             href="https://www.java.com/pt-BR/download/help/whatis_java.html"
-            ><img
+          >
+            <img
               title="Documentação do Java"
               src="imagens/stacks/java.png"
               alt="Java"
-          /></a>
+            />
+          </a>
 
           <a
             target="_blank"
             href="https://docs.spring.io/spring-boot/index.html"
-            ><img
+          >
+            <img
               title="Documentação do SpringBoot"
               src="imagens/stacks/springboot.png"
               alt="SpringBoot"
-          /></a>
+            />
+          </a>
 
           <a
             target="_blank"
             href="https://www.typescriptlang.org/pt/docs/handbook/typescript-from-scratch.html"
-            ><img
+          >
+            <img
               title="Documentação do TypeScript"
               src="imagens/stacks/typescript.png"
               alt="TypeScript"
-          /></a>
+            />
+          </a>
 
-          <a target="_blank" href="https://angular.dev/overview"
-            ><img
+          <a target="_blank" href="https://angular.dev/overview">
+            <img
               title="Documentação do Angular"
               src="imagens/stacks/angular.png"
               alt="Angular"
-          /></a>
-          <a target="_blank" href="https://dart.dev/docs"
-            ><img
+            />
+          </a>
+
+          <a target="_blank" href="https://dart.dev/docs">
+            <img
               title="Documentação do Dart"
               src="imagens/stacks/dart.png"
               alt="Dart"
-          /></a>
-          <a target="_blank" href="https://docs.flutter.dev/"
-            ><img
+            />
+          </a>
+
+          <a target="_blank" href="https://docs.flutter.dev/">
+            <img
               title="Documentação do Flutter"
               src="imagens/stacks/flutter.png"
               alt="Flutter"
-          /></a>
+            />
+          </a>
+
           <a
             target="_blank"
             href="https://docs.python.org/pt-br/3/tutorial/index.html"
-            ><img
+          >
+            <img
               title="Documentação do Python"
               src="imagens/stacks/python.png"
               alt="Python"
-          /></a>
-          <a target="_blank" href="https://www.postgresql.org/docs/"
-            ><img
+            />
+          </a>
+
+          <a target="_blank" href="https://www.postgresql.org/docs/">
+            <img
               title="Documentação do PostgreSQL"
               src="imagens/stacks/postgres.png"
               alt="PostgreSQL"
-          /></a>
-          <a target="_blank" href="https://docs.docker.com/get-started/"
-            ><img
+            />
+          </a>
+
+          <a target="_blank" href="https://www.mongodb.com/pt-br/docs/">
+            <img
+              title="Documentação do MongoDB"
+              src="imagens/stacks/mongodb.png"
+              alt="MongoDB"
+            />
+          </a>
+
+          <a target="_blank" href="https://docs.aws.amazon.com/">
+            <img
+              title="Documentação da AWS"
+              src="imagens/stacks/aws.png"
+              alt="AWS"
+            />
+          </a>
+
+          <a target="_blank" href="https://docs.docker.com/get-started/">
+            <img
               title="Documentação do Docker"
               src="imagens/stacks/docker.png"
               alt="Docker"
-          /></a>
-          <a target="_blank" href="https://git-scm.com/docs/git/pt_BR"
-            ><img
+            />
+          </a>
+
+          <a target="_blank" href="https://git-scm.com/docs/git/pt_BR">
+            <img
               title="Documentação do Git"
               src="imagens/stacks/git.png"
               alt="Git"
-          /></a>
+            />
+          </a>
         </div>
       </div>
     </div>
 
-    <div id="projetos" class="projetos">
-      <h1>Projetos</h1>
+    <!-- ################## EXPERIÊNCIA ################## -->
+    <div id="experiencia" class="experiencia">
+      <h2>Experiência</h2>
+      <div class="experiencia-container">
+        <div class="experiencia-titulo">
+          <img title="Compact Jr" src="imagens/compact.jpg" alt="Compact" />
+          <a target="_blank" href="https://compactjr.com/">
+            Compact Jr (04/2024 - 04/2025)
+          </a>
+        </div>
+        <p>
+          Atuei como desenvolvedor backend na Compact Jr, onde contribuí para o
+          desenvolvimento e manutenção de funcionalidades em um sistema ERP.
+          Minhas atividades incluíam a implementação de APIs REST utilizando
+          Java e Spring Boot, além de participação ativa em reuniões de
+          definição técnica e de negócio.
+        </p>
+      </div>
+    </div>
 
-      <div class="projetos-economizaja">
-        <h2>Economiza Já</h2>
+    <!-- ################## PROJETOS ################## -->
+    <div id="projetos" class="projetos">
+      <h2>Projetos</h2>
+
+      <!-- Projeto: EconomizaJá -->
+      <div class="projeto">
+        <p style="font-size: 20px; margin-bottom: 5px">EconomizaJá</p>
         <p>
           Economiza Já é uma aplicação web desenvolvida para acompanhar receitas
           e despesas de forma prática e eficiente. O sistema exibe gráficos
@@ -173,189 +231,190 @@
           movimentações ao longo do tempo, facilitando assim o controle
           financeiro pessoal.
         </p>
-        <div class="projetos-repositorios">
-          <div class="projetos-repositorios-link">
-            <div class="projetos-repositorios-link-github">
-              <h3>Front-End</h3>
+        <div class="repositorios">
+          <!-- Repositório Front-End -->
+          <div class="repositorio">
+            <div class="repositorio-titulo">
+              <p>Front-End</p>
               <a
                 target="_blank"
                 href="https://github.com/GabrielGonzatto/front_end_economizaja"
-                ><img
-                  title="Link do GitHub para o front-end do Economiza Já"
-                  src="imagens/github.png"
-                  alt="Link do GitHub para o projeto"
-              /></a>
+              >
+                <img src="imagens/github.png" alt="Repositório Github" />
+              </a>
             </div>
-            <div class="projetos-repositorios-link-imagens">
+            <div class="repositorio-tecnologia">
               <a
                 target="_blank"
                 href="https://www.typescriptlang.org/pt/docs/handbook/typescript-from-scratch.html"
-                ><img
+              >
+                <img
                   title="Documentação do TypeScript"
                   src="imagens/stacks/typescript.png"
                   alt="TypeScript"
-              /></a>
-              <a target="_blank" href="https://angular.dev/overview"
-                ><img
+                />
+              </a>
+              <a target="_blank" href="https://angular.dev/overview">
+                <img
                   title="Documentação do Angular"
                   src="imagens/stacks/angular.png"
                   alt="Angular"
-              /></a>
+                />
+              </a>
             </div>
           </div>
 
-          <div class="projetos-repositorios-link">
-            <div class="projetos-repositorios-link-github">
-              <h3>Back-End</h3>
+          <!-- Repositório Back-End -->
+          <div class="repositorio">
+            <div class="repositorio-titulo">
+              <p>Back-End</p>
               <a
                 target="_blank"
                 href="https://github.com/GabrielGonzatto/back_end_economizaja"
-                ><img
-                  title="Link do GitHub para o back-end do Economiza Já"
-                  src="imagens/github.png"
-                  alt="link do GitHub para o projeto"
-              /></a>
+              >
+                <img src="imagens/github.png" alt="Repositório Github" />
+              </a>
             </div>
-            <div class="projetos-repositorios-link-imagens">
+            <div class="repositorio-tecnologia">
               <a
                 target="_blank"
                 href="https://www.java.com/pt-BR/download/help/whatis_java.html"
-                ><img
+              >
+                <img
                   title="Documentação do Java"
                   src="imagens/stacks/java.png"
                   alt="Java"
-              /></a>
-
+                />
+              </a>
               <a
                 target="_blank"
                 href="https://docs.spring.io/spring-boot/index.html"
-                ><img
+              >
+                <img
                   title="Documentação do SpringBoot"
                   src="imagens/stacks/springboot.png"
                   alt="SpringBoot"
-              /></a>
-              <a target="_blank" href="https://www.postgresql.org/docs/"
-                ><img
+                />
+              </a>
+              <a target="_blank" href="https://www.postgresql.org/docs/">
+                <img
                   title="Documentação do PostgreSQL"
                   src="imagens/stacks/postgres.png"
                   alt="PostgreSQL"
-              /></a>
+                />
+              </a>
             </div>
           </div>
 
-          <div class="projetos-repositorios-link">
-            <div class="projetos-repositorios-link-github">
-              <h3>Mobile</h3>
+          <!-- Repositório Mobile -->
+          <div class="repositorio">
+            <div class="repositorio-titulo">
+              <p>Mobile</p>
               <a
                 target="_blank"
                 href="https://github.com/GabrielGonzatto/mobile_front_end_economizaja-"
-                ><img
-                  title="Link do GitHub para o mobile do Economiza Já"
-                  src="imagens/github.png"
-                  alt="link do GitHub para o projeto"
-              /></a>
+              >
+                <img src="imagens/github.png" alt="Repositório Github" />
+              </a>
             </div>
-            <div class="projetos-repositorios-link-imagens">
-              <a target="_blank" href="https://dart.dev/docs"
-                ><img
+            <div class="repositorio-tecnologia">
+              <a target="_blank" href="https://dart.dev/docs">
+                <img
                   title="Documentação do Dart"
                   src="imagens/stacks/dart.png"
                   alt="Dart"
-              /></a>
-              <a target="_blank" href="https://docs.flutter.dev/"
-                ><img
+                />
+              </a>
+              <a target="_blank" href="https://docs.flutter.dev/">
+                <img
                   title="Documentação do Flutter"
                   src="imagens/stacks/flutter.png"
                   alt="Flutter"
-              /></a>
+                />
+              </a>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="projetos-cointrack">
-        <h2>CoinTrack (desenvolvimento)</h2>
+      <!-- Projeto: Moodfy -->
+      <div class="projeto">
+        <p style="font-size: 20px; margin-bottom: 5px">Moodfy</p>
         <p>
-          CoinTrack é uma aplicação web que está sendo desenvolvida para
-          acompanhar cotações de criptomoedas em tempo real. O sistema atualiza
-          dinamicamente as informações financeiras, proporcionando uma
-          experiência interativa e ágil. Além disso, o CoinTrack contará com um
-          mecanismo de notificações por e-mail para alertar os usuários sobre
-          variações significativas nas cotações.
+          Moodfy cria playlists personalizadas usando IA. Escolha estilos,
+          artistas ou sentimentos, e gere sua música com controle total sobre a
+          playlist. Desenvolvido com Java, Spring Boot e Angular.
         </p>
-        <div class="projetos-repositorios">
-          <div class="projetos-repositorios-link">
-            <div class="projetos-repositorios-link-github">
-              <h3>Front-End</h3>
+        <div class="repositorios">
+          <!-- Repositório Front-End -->
+          <div class="repositorio">
+            <div class="repositorio-titulo">
+              <p>Front-End</p>
               <a
                 target="_blank"
-                href="https://github.com/GabrielGonzatto/front_end_cointrack"
-                ><img
-                  title="Link do GitHub para o front-end do CoinTrack"
-                  src="imagens/github.png"
-                  alt="Link do GitHub para o projeto"
-              /></a>
+                href="https://github.com/GabrielGonzatto/moodfy-frontend"
+              >
+                <img src="imagens/github.png" alt="Repositório Github" />
+              </a>
             </div>
-            <div class="projetos-repositorios-link-imagens">
+            <div class="repositorio-tecnologia">
               <a
                 target="_blank"
                 href="https://www.typescriptlang.org/pt/docs/handbook/typescript-from-scratch.html"
-                ><img
+              >
+                <img
                   title="Documentação do TypeScript"
                   src="imagens/stacks/typescript.png"
                   alt="TypeScript"
-              /></a>
-              <a target="_blank" href="https://angular.dev/overview"
-                ><img
+                />
+              </a>
+              <a target="_blank" href="https://angular.dev/overview">
+                <img
                   title="Documentação do Angular"
                   src="imagens/stacks/angular.png"
                   alt="Angular"
-              /></a>
+                />
+              </a>
             </div>
           </div>
 
-          <div class="projetos-repositorios-link">
-            <div class="projetos-repositorios-link-github">
-              <h3>Back-End</h3>
+          <!-- Repositório Back-End -->
+          <div class="repositorio">
+            <div class="repositorio-titulo">
+              <p>Back-End</p>
               <a
                 target="_blank"
-                href="https://github.com/GabrielGonzatto/back_end_cointrack"
-                ><img
-                  title="Link do GitHub para o back-end do CoinTrack"
-                  src="imagens/github.png"
-                  alt="link do GitHub para o projeto"
-              /></a>
+                href="https://github.com/GabrielGonzatto/moodfy-backend"
+              >
+                <img src="imagens/github.png" alt="Repositório Github" />
+              </a>
             </div>
-            <div class="projetos-repositorios-link-imagens">
+            <div class="repositorio-tecnologia">
               <a
                 target="_blank"
                 href="https://www.java.com/pt-BR/download/help/whatis_java.html"
-                ><img
+              >
+                <img
                   title="Documentação do Java"
                   src="imagens/stacks/java.png"
                   alt="Java"
-              /></a>
-
+                />
+              </a>
               <a
                 target="_blank"
                 href="https://docs.spring.io/spring-boot/index.html"
-                ><img
+              >
+                <img
                   title="Documentação do SpringBoot"
                   src="imagens/stacks/springboot.png"
                   alt="SpringBoot"
-              /></a>
-              <a target="_blank" href="https://www.postgresql.org/docs/"
-                ><img
-                  title="Documentação do PostgreSQL"
-                  src="imagens/stacks/postgres.png"
-                  alt="PostgreSQL"
-              /></a>
+                />
+              </a>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

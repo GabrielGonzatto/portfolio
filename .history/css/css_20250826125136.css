@@ -8,6 +8,7 @@ body {
   color: #fff;
   font-family: "Roboto", sans-serif;
   scroll-behavior: smooth;
+  cursor: none;
 }
 
 a {
